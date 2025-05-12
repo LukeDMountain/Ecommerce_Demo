@@ -48,8 +48,8 @@
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView"
-                    tools:textColor="@color/black" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
 
                 <ImageView
                     android:id="@+id/imageView"
@@ -146,6 +146,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/girl" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <TextView
@@ -175,6 +176,16 @@
                 android:textSize="19sp"
                 android:textStyle="bold" />
 
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Botão transparente -->
+                <!-- Posiciona o botão no centro -->
+
+            </RelativeLayout>
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -202,6 +213,24 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@drawable/cat1" />
+
+                        <Button
+                            android:id="@+id/btnPC"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginStart="4dp"
+                            android:background="@android:color/transparent"
+                            android:onClick="abrirCategoriaPC"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- PHONE -->
+
+                        <!-- HEADSETS -->
+
+                        <!-- GAMING -->
+
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
@@ -213,6 +242,7 @@
                         android:text="PC"
                         android:textAlignment="center"
                         android:textColor="@color/black" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -236,6 +266,15 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@drawable/cat2" />
+
+                        <Button
+                            android:id="@+id/btnPhone"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@android:color/transparent"
+                            android:onClick="abrirCategoriaPhone"
+                            tools:layout_editor_absoluteY="1dp" />
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
@@ -270,6 +309,14 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@drawable/cat3" />
+
+                        <Button
+                            android:id="@+id/btnHeadsets"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@android:color/transparent"
+                            android:onClick="abrirCategoriaHeadsets" />
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
@@ -304,6 +351,22 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@drawable/cat4" />
+
+                        <Button
+                            android:id="@+id/gaming"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:text="Clique aqui"
+                            android:textColor="@android:color/white" />
+
+                        <Button
+                            android:id="@+id/btnGaming"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@android:color/transparent"
+                            android:onClick="abrirCategoriaGaming" />
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
@@ -338,6 +401,22 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@drawable/cat5" />
+
+                        <Button
+                            android:id="@+id/all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:text="Clique aqui"
+                            android:textColor="@android:color/white"
+                            tools:layout_editor_absoluteX="5dp" />
+
+                        <Button
+                            android:id="@+id/button6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Button"
+                            tools:layout_editor_absoluteY="14dp" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
@@ -408,7 +487,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:id="@+id/homeBtn"
+                    android:id="@+id/inicio"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
@@ -435,6 +514,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/desejos"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
@@ -442,7 +522,7 @@
 
                     <ImageView
                         android:id="@+id/imageView10"
-                        android:layout_width="wrap_content"
+                        android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="4dp"
@@ -461,6 +541,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/carrinhoBT"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
@@ -487,7 +568,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/cartBtn"
+                    android:id="@+id/PerfilBT"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
@@ -518,4 +599,5 @@
 
         </com.google.android.material.bottomappbar.BottomAppBar>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
