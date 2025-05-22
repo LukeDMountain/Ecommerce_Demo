@@ -21,7 +21,7 @@ public class GamingActivity extends AppCompatActivity {
 
         // Inicializando RecyclerView
         recyclerViewGaming = findViewById(R.id.gamingRecyclerView); // Certifique-se de que o ID corresponde ao definido no XML
-        recyclerViewGamin.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewGaming.setLayoutManager(new LinearLayoutManager(this));
 
         // Adicionando dados fictícios
         ArrayList<PopularDomain> items = new ArrayList<>();

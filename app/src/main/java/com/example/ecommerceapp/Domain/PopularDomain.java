@@ -20,7 +20,7 @@ public class PopularDomain implements Serializable {
         this.price = price;
     }
 
-    public PopularDomain(String logitechGProX, String description, String picUrl, double v, String s, String number, int i) {
+    public PopularDomain(String title, String description, String picUrl, double v, String s, String number, int i) {
     }
 
     public double getPrice() {

@@ -45,7 +45,7 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHo
         holder.num.setText(String.valueOf(listItemSelected.get(position).getNumberinCart()));
 
         int drawableResourceId = holder.itemView.getContext().getResources()
-                .getIdentifier(listItemSelected.get(position).getPicUrl(), "drawable", holder.itemView.getContext().getPackageName());
+                .getIdentifier(listItemSelected.get(position).getPicUrl(), "drawable-ldpi", holder.itemView.getContext().getPackageName());
 
         Glide.with(holder.itemView.getContext())
                 .load(drawableResourceId)
